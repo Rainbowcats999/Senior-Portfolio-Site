@@ -51,5 +51,26 @@ document.addEventListener('DOMContentLoaded', function(){
 			contactForm.reset();
 		});
 	}
+
+	// Reveal-on-scroll: add .reveal then observe and toggle .in-view
+	const revealSelectors = ['.card', '.project', '.profile-card', '.about-card', '.contact-form', '.hero-left', '.hero-right'];
+	const revealElements = [];
+	revealSelectors.forEach(sel=>{document.querySelectorAll(sel).forEach(el=>{el.classList.add('reveal');revealElements.push(el)})});
+
+	if(revealElements.length){
+		const obs = new IntersectionObserver((entries)=>{
+			entries.forEach(ent=>{
+				if(ent.isIntersecting){
+					ent.target.classList.add('in-view');
+					obs.unobserve(ent.target);
+				}
+			});
+		},{threshold:0.12});
+		revealElements.forEach(el=>obs.observe(el));
+	}
+
+	// subtle brand glow toggle (adds gentle pulsing)
+	const brand = document.querySelector('.brand');
+	if(brand) brand.classList.add('glow');
 });
 
