@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<title>Elizabeth R. — Portfolio</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+	<link rel="icon" href="favicon.svg" type="image/svg+xml">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header class="site-header">
+		<div class="container header-inner">
+			<a class="brand" href="#">NEXORA</a>
+			<nav class="main-nav" id="main-nav">
+				<a href="#home">Home</a>
+				<a href="#projects">Projects</a>
+				<a href="#about">About</a>
+				<a href="#contact">Contact</a>
+			</nav>
+			<button class="nav-toggle" id="nav-toggle" aria-label="Open menu">☰</button>
+		</div>
+	</header>
+
+	<main>
+		<section id="home" class="hero">
+			<div class="container hero-inner">
+				<div class="hero-left">
+					<p class="eyebrow">Hello, I'm</p>
+					<h1 class="hero-title">ELIZABETH R.</h1>
+					<p class="hero-sub">UI/UX Designer &amp; Frontend Developer</p>
+					<div class="hero-ctas">
+						<a class="btnbtn-primary btn" href="#projects">View My Work</a>
+						<a class="btn btn-ghost" href="#about">More About Me</a>
+					</div>
+
+					<div class="featured">
+						<h3>Featured Projects</h3>
+						<div class="cards">
+							<article class="card">
+								<div class="card-media"></div>
+								<div class="card-body">
+									<h4>Neon Dash</h4>
+									<p>Web Application</p>
+								</div>
+							</article>
+							<article class="card">
+								<div class="card-media"></div>
+								<div class="card-body">
+									<h4>Cyber Market</h4>
+									<p>E‑commerce Platform</p>
+								</div>
+							</article>
+							<article class="card">
+								<div class="card-media"></div>
+								<div class="card-body">
+									<h4>Echo Chat</h4>
+									<p>Messaging App</p>
+								</div>
+							</article>
+						</div>
+					</div>
+				</div>
+
+				<aside class="hero-right">
+					<div class="profile-card">
+						<div class="portrait"></div>
+						<div class="profile-meta">
+							<h3>About Me</h3>
+							<p>I'm a passionate designer and developer who blends UI design with modern frontend engineering to build immersive digital experiences.</p>
+							<a class="btn btn-outline" href="#about">More About Me</a>
+						</div>
+					</div>
+				</aside>
+			</div>
+		</section>
+
+		<section id="projects" class="projects">
+			<div class="container">
+				<div class="section-head">
+					<h2>My Projects</h2>
+					<div class="filters">
+						<button class="filter active" data-filter="all">All</button>
+						<button class="filter" data-filter="web">Web Apps</button>
+						<button class="filter" data-filter="ui">UI/UX</button>
+						<button class="filter" data-filter="mobile">Mobile</button>
+					</div>
+				</div>
+
+				<div class="projects-grid" id="projects-grid">
+					<!-- Example project cards -->
+					<article class="project" data-type="web">
+						<div class="proj-media"></div>
+						<div class="proj-body">
+							<h3>Neon Dash</h3>
+							<p>Web Application</p>
+						</div>
+					</article>
+					<article class="project" data-type="web">
+						<div class="proj-media"></div>
+						<div class="proj-body">
+							<h3>Cyber Market</h3>
+							<p>E‑commerce Platform</p>
+						</div>
+					</article>
+					<article class="project" data-type="ui">
+						<div class="proj-media"></div>
+						<div class="proj-body">
+							<h3>Echo Chat</h3>
+							<p>Messaging App</p>
+						</div>
+					</article>
+					<article class="project" data-type="ui">
+						<div class="proj-media"></div>
+						<div class="proj-body">
+							<h3>Data Visualizer</h3>
+							<p>Dashboard Design</p>
+						</div>
+					</article>
+				</div>
+
+				<div class="load-more-wrap">
+					<button class="btn btn-outline">Load More</button>
+				</div>
+			</div>
+		</section>
+
+		<section id="about" class="about">
+			<div class="container about-inner">
+				<div class="about-left">
+					<h2>About Me</h2>
+					<p>I'm Elizabeth — a website designer and frontend developer focused on creating bold, immersive interfaces and performant, maintainable code.</p>
+					<ul class="stats">
+						<li><strong>3+</strong> Years Experience</li>
+						<li><strong>20+</strong> Projects Completed</li>
+						<li><strong>10+</strong> Happy Clients</li>
+					</ul>
+					<a class="btn btn-primary" href="#contact">Download Resume</a>
+				</div>
+				<div class="about-right">
+					<div class="about-card"></div>
+				</div>
+			</div>
+		</section>
+
+		<section id="contact" class="contact">
+			<div class="container">
+				<div class="contact-inner">
+					<div class="contact-form">
+						<h2>Let's Work Together</h2>
+						<form id="contact-form">
+							<label><span>Your Name</span><input name="name" required></label>
+							<label><span>Your Email</span><input name="email" type="email" required></label>
+							<label><span>Message</span><textarea name="message" rows="5" required></textarea></label>
+							<button class="btn btn-primary" type="submit">Send Message</button>
+						</form>
+					</div>
+					<aside class="contact-info">
+						<h3>Contact</h3>
+						<p>Email: <a href="mailto:hello@elizabeth.dev">hello@elizabeth.dev</a></p>
+						<p>Location: New York, USA</p>
+						<p class="socials">Socials: <a href="#">Dribbble</a> • <a href="#">GitHub</a> • <a href="#">LinkedIn</a></p>
+					</aside>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<div class="container footer-inner">
+			<div>© <span id="year"></span> NEXORA — Designed by Elizabeth R.</div>
+			<nav class="footer-nav">
+				<a href="#projects">Projects</a>
+				<a href="#about">About</a>
+				<a href="#contact">Contact</a>
+			</nav>
+		</div>
+	</footer>
+
+	<script src="script.js"></script>
+</body>
+</html>
+
