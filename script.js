@@ -27,16 +27,17 @@ document.addEventListener('DOMContentLoaded', function(){
 		});
 	});
 
-	// Project filters
+	// Project filters (support .project and .proj-card markup)
 	const filters = document.querySelectorAll('.filter');
-	const projects = document.querySelectorAll('.project');
+	const projects = document.querySelectorAll('.project, .proj-card');
 	filters.forEach(btn=>{
 		btn.addEventListener('click', ()=>{
 			filters.forEach(b=>b.classList.remove('active'));
 			btn.classList.add('active');
 			const f = btn.dataset.filter;
 			projects.forEach(p=>{
-				if(f==='all' || p.dataset.type===f) p.style.display = '';
+				const t = p.dataset.type || p.getAttribute('data-type');
+				if(f==='all' || t===f) p.style.display = '';
 				else p.style.display = 'none';
 			});
 		});
@@ -72,5 +73,16 @@ document.addEventListener('DOMContentLoaded', function(){
 	// subtle brand glow toggle (adds gentle pulsing)
 	const brand = document.querySelector('.brand');
 	if(brand) brand.classList.add('glow');
+  
+	// Mark nav / sidebar active based on current page
+	const path = location.pathname.split('/').pop() || 'index.html';
+	document.querySelectorAll('.top-nav .nav-link').forEach(a=>{
+		const href = a.getAttribute('href');
+		if(href && href.split('/').pop()===path) a.classList.add('active');
+	});
+	document.querySelectorAll('.side-links .side-btn').forEach(a=>{
+		const href = a.getAttribute('href');
+		if(href && href.split('/').pop()===path) a.classList.add('active');
+	});
 });
 

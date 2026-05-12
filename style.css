@@ -43,6 +43,7 @@ body{background: radial-gradient(1200px 400px at 10% 10%, rgba(107,56,255,0.06),
 .hero-bg{position:absolute;inset:0;background-image:url('imgs/bg-city.jpg');background-size:cover;background-position:center;filter:contrast(.9) brightness(.5);opacity:1}
 .hero-inner{position:relative;display:grid;grid-template-columns:1fr 360px;gap:28px;padding:34px}
 .hero-content{color:#e8eaf8}
+.hero-title{font-family:Rajdhani, sans-serif;font-size:84px;line-height:0.9;margin:6px 0;color:#fff;text-shadow:0 8px 40px rgba(107,56,255,0.06)}
 .hero-sub{color:var(--accent2);font-weight:600;margin-top:6px}
 .hero-desc{color:var(--muted);max-width:520px}
 .hero-actions{margin-top:18px;display:flex;gap:12px}
@@ -57,7 +58,7 @@ body{background: radial-gradient(1200px 400px at 10% 10%, rgba(107,56,255,0.06),
 .section-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
 .projects-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
 .proj-card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border:1px solid rgba(255,255,255,0.04);border-radius:12px;overflow:hidden;display:flex}
-.proj-thumb{width:240px;height:140px;background:linear-gradient(120deg, rgba(107,56,255,0.12), rgba(255,45,247,0.08))}
+.proj-thumb{width:240px;height:140px;background:linear-gradient(120deg, rgba(107,56,255,0.12), rgba(255,45,247,0.08));background-image:url('imgs/thumb1.svg');background-size:cover;background-position:center}
 .proj-body{padding:12px;flex:1}
 .proj-tags{margin-top:8px;display:flex;gap:8px}
 .proj-tags span{background:rgba(255,255,255,0.02);padding:6px;border-radius:8px;font-size:12px;color:var(--muted)}
@@ -126,6 +127,23 @@ body{background: radial-gradient(1200px 400px at 10% 10%, rgba(107,56,255,0.06),
 	.projects-grid{grid-template-columns:1fr}
 	.resume-contact{grid-template-columns:1fr}
 }
+
+/* Right info panel for projects page */
+.content-split{display:grid;grid-template-columns:1fr 320px;gap:18px}
+.right-panel{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:14px;border-radius:12px;border:1px solid rgba(255,255,255,0.04)}
+.skill-bar{height:10px;background:rgba(255,255,255,0.03);border-radius:999px;overflow:hidden;margin-bottom:8px}
+.skill-bar > i{display:block;height:100%;background:linear-gradient(90deg,var(--accent1),var(--accent2));width:60%}
+.right-panel h4{margin-top:0;color:var(--muted)}
+
+/* Glass neon stroke */
+.glass-panel{position:relative;border-radius:12px;padding:12px;border:1px solid rgba(255,255,255,0.04);background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.005));box-shadow:0 6px 30px rgba(11,7,17,0.6) inset}
+.neon-outline{box-shadow:0 0 18px rgba(107,56,255,0.06), 0 0 48px rgba(255,45,247,0.03)}
+
+/* Project thumbnail hover overlay */
+.proj-card{position:relative}
+.proj-card .proj-thumb::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg, rgba(0,0,0,0.0), rgba(0,0,0,0.35));opacity:0;transition:opacity .28s}
+.proj-card:hover .proj-thumb::after{opacity:1}
+
 
 /* Animations & Hovers */
 .btn{transition:transform .22s ease, box-shadow .22s ease, opacity .18s ease}

@@ -1,0 +1,19 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='600' viewBox='0 0 1200 600' preserveAspectRatio='xMidYMid slice'>
+  <defs>
+    <linearGradient id='g1' x1='0' x2='1'>
+      <stop offset='0' stop-color='#0b0820'/>
+      <stop offset='1' stop-color='#120419'/>
+    </linearGradient>
+  </defs>
+  <rect width='1200' height='600' fill='url(#g1)' />
+  <g fill='none' stroke='#5e2bff' stroke-opacity='0.12' stroke-width='2'>
+    <rect x='60' y='80' width='40' height='160' />
+    <rect x='120' y='40' width='28' height='200' />
+    <rect x='200' y='140' width='36' height='100' />
+    <rect x='280' y='30' width='52' height='240' />
+    <rect x='380' y='100' width='44' height='140' />
+  </g>
+  <g fill='#ff2df7' opacity='0.06'>
+    <circle cx='980' cy='120' r='80'/>
+  </g>
+</svg>
