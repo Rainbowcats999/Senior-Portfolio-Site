@@ -1,1 +1,31 @@
-<svg xmlns='http://www.w3.org/2000/svg' width='640' height='360' viewBox='0 0 640 360'><rect width='640' height='360' fill='#0b0711'/><defs><linearGradient id='g2' x1='0' x2='1'><stop offset='0' stop-color='#ff2df7'/><stop offset='1' stop-color='#6b38ff'/></linearGradient></defs><rect x='16' y='16' width='608' height='328' rx='8' fill='url(#g2)' opacity='0.12'/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#031126"/>
+      <stop offset=".55" stop-color="#091633"/>
+      <stop offset="1" stop-color="#180725"/>
+    </linearGradient>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="640" height="360" rx="12" fill="url(#bg)"/>
+  <g opacity=".22" stroke="#7a4cff">
+    <path d="M0 250 H640 M0 294 H640 M0 340 H640"/>
+    <path d="M60 0 V360 M132 0 V360 M204 0 V360 M276 0 V360 M348 0 V360 M420 0 V360 M492 0 V360 M564 0 V360"/>
+  </g>
+  <rect x="42" y="46" width="250" height="204" rx="10" fill="#07142e" stroke="#29d7ff"/>
+  <rect x="326" y="46" width="270" height="204" rx="10" fill="#07102b" stroke="#ff2fe8"/>
+  <g filter="url(#glow)">
+    <circle cx="168" cy="148" r="62" fill="none" stroke="#29d7ff" stroke-width="6"/>
+    <path d="M168 86 V148 H224" stroke="#ff2fe8" stroke-width="5"/>
+    <path d="M358 198 C398 108 432 232 468 158 C500 92 540 126 574 86" fill="none" stroke="#29d7ff" stroke-width="4"/>
+    <path d="M360 222 H572" stroke="#ff2fe8" stroke-width="3"/>
+    <circle cx="510" cy="114" r="10" fill="#ff2fe8"/>
+  </g>
+  <text x="52" y="308" fill="#e8efff" font-family="Rajdhani,Arial" font-size="28" font-weight="700">WEATHER DASHBOARD</text>
+</svg>

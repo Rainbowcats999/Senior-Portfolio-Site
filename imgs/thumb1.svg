@@ -1,10 +1,31 @@
-<svg xmlns='http://www.w3.org/2000/svg' width='640' height='360' viewBox='0 0 640 360'>
-  <rect width='640' height='360' fill='#0b0711'/>
-  <rect x='20' y='20' width='600' height='320' rx='8' fill='url(#g)'/>
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360">
   <defs>
-    <linearGradient id='g' x1='0' x2='1'>
-      <stop offset='0' stop-color='#6b38ff'/>
-      <stop offset='1' stop-color='#ff2df7'/>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#06102a"/>
+      <stop offset=".55" stop-color="#0b0d2d"/>
+      <stop offset="1" stop-color="#1c0629"/>
     </linearGradient>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
   </defs>
+  <rect width="640" height="360" rx="12" fill="url(#bg)"/>
+  <g opacity=".28" stroke="#29d7ff">
+    <path d="M0 260 H640 M0 298 H640 M0 338 H640"/>
+    <path d="M80 0 V360 M160 0 V360 M240 0 V360 M320 0 V360 M400 0 V360 M480 0 V360 M560 0 V360"/>
+  </g>
+  <rect x="48" y="42" width="308" height="208" rx="10" fill="#081329" stroke="#7a4cff"/>
+  <rect x="378" y="64" width="214" height="148" rx="10" fill="#07172f" stroke="#ff2fe8"/>
+  <g filter="url(#glow)">
+    <path d="M78 190 C128 108 188 224 250 130 C284 78 318 96 338 124" fill="none" stroke="#29d7ff" stroke-width="4"/>
+    <path d="M86 218 H320" stroke="#ff2fe8" stroke-width="3"/>
+    <path d="M410 112 H558 M410 148 H526 M410 184 H570" stroke="#29d7ff" stroke-width="4"/>
+    <circle cx="176" cy="134" r="20" fill="#ff2fe8" opacity=".5"/>
+    <circle cx="514" cy="112" r="8" fill="#ff2fe8"/>
+  </g>
+  <text x="52" y="308" fill="#e8efff" font-family="Rajdhani,Arial" font-size="28" font-weight="700">AI STUDY HELPER</text>
 </svg>

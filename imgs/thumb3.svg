@@ -1,1 +1,32 @@
-<svg xmlns='http://www.w3.org/2000/svg' width='640' height='360' viewBox='0 0 640 360'><rect width='640' height='360' fill='#0b0711'/><defs><linearGradient id='g3' x1='0' x2='1'><stop offset='0' stop-color='#5e2bff'/><stop offset='1' stop-color='#ff2df7'/></linearGradient></defs><rect x='12' y='12' width='616' height='336' rx='8' fill='url(#g3)' opacity='0.1'/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#050823"/>
+      <stop offset=".5" stop-color="#0b0e2d"/>
+      <stop offset="1" stop-color="#1a0628"/>
+    </linearGradient>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="640" height="360" rx="12" fill="url(#bg)"/>
+  <g fill="#070b1c">
+    <rect x="54" y="74" width="54" height="178"/>
+    <rect x="136" y="42" width="44" height="210"/>
+    <rect x="210" y="104" width="72" height="148"/>
+    <rect x="360" y="70" width="62" height="182"/>
+    <rect x="462" y="34" width="52" height="218"/>
+    <rect x="548" y="92" width="48" height="160"/>
+  </g>
+  <g filter="url(#glow)">
+    <path d="M82 92 V250 M158 58 V250 M246 122 V250 M392 92 V250 M488 54 V250 M572 110 V250" stroke="#29d7ff" stroke-width="3"/>
+    <path d="M40 252 H600" stroke="#ff2fe8" stroke-width="4"/>
+    <circle cx="314" cy="178" r="44" fill="#ff2fe8" opacity=".18"/>
+    <path d="M242 210 C284 142 342 240 398 154" fill="none" stroke="#29d7ff" stroke-width="4"/>
+  </g>
+  <text x="52" y="308" fill="#e8efff" font-family="Rajdhani,Arial" font-size="28" font-weight="700">PORTFOLIO WEBSITE</text>
+</svg>

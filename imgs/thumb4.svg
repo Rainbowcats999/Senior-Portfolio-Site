@@ -1,1 +1,33 @@
-<svg xmlns='http://www.w3.org/2000/svg' width='640' height='360' viewBox='0 0 640 360'><rect width='640' height='360' fill='#0b0711'/><defs><linearGradient id='g4' x1='0' x2='1'><stop offset='0' stop-color='#6b38ff'/><stop offset='1' stop-color='#ff2df7'/></linearGradient></defs><rect x='8' y='8' width='624' height='344' rx='8' fill='url(#g4)' opacity='0.08'/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#041227"/>
+      <stop offset=".48" stop-color="#0a1330"/>
+      <stop offset="1" stop-color="#17061f"/>
+    </linearGradient>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="640" height="360" rx="12" fill="url(#bg)"/>
+  <rect x="54" y="48" width="532" height="210" rx="12" fill="#07132d" stroke="#7a4cff"/>
+  <g stroke="#1d2c5a" stroke-width="1">
+    <path d="M78 102 H560 M78 150 H560 M78 198 H560"/>
+    <path d="M190 70 V236 M310 70 V236 M430 70 V236"/>
+  </g>
+  <g filter="url(#glow)">
+    <rect x="88" y="88" width="80" height="30" rx="5" fill="#ff2fe8" opacity=".45"/>
+    <rect x="210" y="88" width="128" height="30" rx="5" fill="#29d7ff" opacity=".36"/>
+    <rect x="374" y="88" width="160" height="30" rx="5" fill="#7a4cff" opacity=".45"/>
+    <rect x="88" y="136" width="182" height="30" rx="5" fill="#29d7ff" opacity=".34"/>
+    <rect x="310" y="136" width="224" height="30" rx="5" fill="#ff2fe8" opacity=".35"/>
+    <rect x="88" y="184" width="122" height="30" rx="5" fill="#7a4cff" opacity=".5"/>
+    <rect x="250" y="184" width="284" height="30" rx="5" fill="#29d7ff" opacity=".28"/>
+    <path d="M552 64 L574 86 M574 64 L552 86" stroke="#ff2fe8" stroke-width="4"/>
+  </g>
+  <text x="52" y="308" fill="#e8efff" font-family="Rajdhani,Arial" font-size="28" font-weight="700">TASK MANAGER</text>
+</svg>
