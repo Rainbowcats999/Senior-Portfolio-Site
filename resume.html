@@ -2,75 +2,112 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Resume — Elizabeth Rizov</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Resume of Elizabeth Rizov</title>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="app-shell">
-    <aside class="sidebar">
-      <div class="logo">ER</div>
-      <nav class="side-links" aria-label="Sidebar">
-        <a class="side-btn" href="index.html" title="Home">🏠</a>
-        <a class="side-btn" href="about.html" title="About">👤</a>
-        <a class="side-btn" href="projects.html" title="Projects">💼</a>
-        <a class="side-btn active" href="resume.html" title="Resume">📄</a>
-        <a class="side-btn" href="contact.html" title="Contact">✉️</a>
-      </nav>
-      <div class="side-footer">
-        <button class="icon-btn" title="Theme">⚙️</button>
-      </div>
-    </aside>
-
-    <div class="main-panel">
-      <header class="panel-header">
-        <div class="panel-left"><div class="name">ELIZABETH RIZOV</div></div>
-        <nav class="top-nav">
-          <a href="index.html" class="nav-link">Home</a>
-          <a href="about.html" class="nav-link">About</a>
-          <a href="projects.html" class="nav-link">Projects</a>
-          <a href="resume.html" class="nav-link active">Resume</a>
-          <a href="contact.html" class="nav-link">Contact</a>
+  <div class="site-shell">
+    <div class="page-panel resume-panel">
+      <header class="topbar">
+        <a class="brand" href="index.html">ELIZABETH RIZOV</a>
+        <nav class="top-nav" aria-label="Primary">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="projects.html">Projects</a>
+          <a class="active" href="resume.html">Resume</a>
+          <a href="contact.html">Contact</a>
         </nav>
-        <div class="panel-right"><button class="icon-btn">⚙️</button></div>
+        <div class="mode-tools" aria-label="Display controls">
+          <button type="button" title="Light mode">&#9788;</button>
+        </div>
       </header>
 
-      <main class="panel-content">
-        <section class="resume-page">
+      <main class="content resume-layout">
+        <section class="resume-main">
           <h1>My Resume</h1>
-          <div class="resume-columns">
-            <div class="main-resume">
-              <h3>Education</h3>
-              <p>High School Student — Focused on Computer Science</p>
 
-              <h3>Experience</h3>
-              <p>Freelance developer and small project work.</p>
-
-              <h3>Projects</h3>
-              <ul>
-                <li>AI Study Helper — Python</li>
-                <li>Portfolio Website — HTML/CSS/JS</li>
-              </ul>
+          <div class="resume-section">
+            <h2>Education</h2>
+            <div class="resume-item">
+              <div>
+                <h3>High School Student</h3>
+                <p>Focused on Computer Science</p>
+              </div>
+              <span>2022 - Present</span>
             </div>
+          </div>
 
-            <aside class="resume-side">
-              <h4>Download</h4>
-              <a class="btn btn-outline" href="#">PDF Resume</a>
+          <div class="resume-section">
+            <h2>Experience</h2>
+            <div class="resume-item">
+              <div>
+                <h3>Freelance Designer</h3>
+                <p>Worked on personal and client projects</p>
+              </div>
+              <span>2023 - Present</span>
+            </div>
+            <div class="resume-item">
+              <div>
+                <h3>Python Projects</h3>
+                <p>Built multiple projects in Python, HTML, JS</p>
+              </div>
+              <span>2022 - Present</span>
+            </div>
+            <div class="resume-item">
+              <div>
+                <h3>Hackathon Participant</h3>
+                <p>Collaborated with teams to solve real-world problems</p>
+              </div>
+              <span>2023</span>
+            </div>
+          </div>
 
-              <h4>Languages</h4>
-              <p>English (native)</p>
-
-              <h4>Strengths</h4>
-              <ul><li>Creative Thinking</li><li>Detail-Oriented</li></ul>
-            </aside>
+          <div class="resume-section">
+            <h2>Certifications</h2>
+            <div class="resume-item">
+              <p>Python for Everybody - Coursera</p>
+              <span>2023</span>
+            </div>
+            <div class="resume-item">
+              <p>Responsive Web Design - freeCodeCamp</p>
+              <span>2023</span>
+            </div>
+            <div class="resume-item">
+              <p>JavaScript Algorithms - freeCodeCamp</p>
+              <span>2024</span>
+            </div>
           </div>
         </section>
-      </main>
 
-      <footer class="panel-footer">Designed &amp; Built by Elizabeth Rizov</footer>
+        <aside class="resume-sidebar">
+          <section class="mini-panel download-panel">
+            <h2>Download</h2>
+            <p>PDF Resume</p>
+            <p>One Page Version</p>
+            <a href="#" title="Download resume">&#8681;</a>
+          </section>
+
+          <section class="mini-panel">
+            <h2>Languages</h2>
+            <div class="mini-row"><span>English</span><b>Native</b></div>
+            <div class="mini-row"><span>Bulgarian</span><b>Native</b></div>
+          </section>
+
+          <section class="mini-panel">
+            <h2>Strengths</h2>
+            <ul class="strength-list">
+              <li>Creative Thinking</li>
+              <li>Fast Learner</li>
+              <li>Detail-Oriented</li>
+              <li>Team Player</li>
+            </ul>
+          </section>
+        </aside>
+      </main>
     </div>
   </div>
 

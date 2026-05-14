@@ -2,155 +2,94 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Elizabeth Rizov — Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Elizabeth Rizov Portfolio</title>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="app-shell">
-    <aside class="sidebar">
-      <div class="logo">ER</div>
-      <nav class="side-links" aria-label="Sidebar">
-        <a class="side-btn active" href="index.html" title="Home">🏠</a>
-        <a class="side-btn" href="about.html" title="About">👤</a>
-        <a class="side-btn" href="projects.html" title="Projects">💼</a>
-        <a class="side-btn" href="resume.html" title="Resume">📄</a>
-        <a class="side-btn" href="contact.html" title="Contact">✉️</a>
+  <div class="site-shell home-shell">
+    <aside class="side-rail" aria-label="Portfolio shortcuts">
+      <a class="mark" href="index.html" aria-label="Elizabeth Rizov home">ER</a>
+      <nav class="rail-nav">
+        <a class="rail-link active" href="index.html" title="Home">&#8962;</a>
+        <a class="rail-link" href="about.html" title="About">&#9675;</a>
+        <a class="rail-link" href="projects.html" title="Projects">&lt;/&gt;</a>
+        <a class="rail-link" href="resume.html" title="Resume">&#9636;</a>
+        <a class="rail-link" href="contact.html" title="Contact">&#9993;</a>
       </nav>
-      <div class="side-footer">
-        <button class="icon-btn" title="Theme">⚙️</button>
+      <div class="rail-socials" aria-label="Social links">
+        <a href="#" title="GitHub">gh</a>
+        <a href="#" title="LinkedIn">in</a>
+        <a href="#" title="Instagram">ig</a>
       </div>
     </aside>
 
-    <div class="main-panel">
-      <header class="panel-header">
-        <div class="panel-left">
-          <div class="name">ELIZABETH RIZOV</div>
-        </div>
-        <nav class="top-nav">
-          <a href="index.html" class="nav-link">Home</a>
-          <a href="about.html" class="nav-link">About</a>
-          <a href="projects.html" class="nav-link">Projects</a>
-          <a href="resume.html" class="nav-link">Resume</a>
-          <a href="contact.html" class="nav-link">Contact</a>
+    <div class="page-panel home-panel">
+      <header class="topbar">
+        <a class="brand" href="index.html">ELIZABETH RIZOV</a>
+        <nav class="top-nav" aria-label="Primary">
+          <a class="active" href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="projects.html">Projects</a>
+          <a href="resume.html">Resume</a>
+          <a href="contact.html">Contact</a>
         </nav>
-        <div class="panel-right">
-          <button class="icon-btn">⚙️</button>
+        <div class="mode-tools" aria-label="Display controls">
+          <button type="button" title="Light mode">&#9788;</button>
+          <span aria-hidden="true">&#183;</span>
+          <button type="button" title="Dark mode">&#9790;</button>
         </div>
       </header>
 
-      <main class="panel-content">
-        <!-- HERO CARD -->
-        <section id="home" class="hero-card">
-          <div class="hero-bg"></div>
-          <div class="hero-inner">
-            <div class="hero-content">
-              <p class="eyebrow">HELLO, I'M</p>
-              <h1 class="hero-title">ELIZABETH RIZOV</h1>
-              <p class="hero-sub">STUDENT DEVELOPER &amp; DESIGNER</p>
-              <p class="hero-desc">I build futuristic digital experiences with code and creativity. Passionate about solving problems and bringing ideas to life.</p>
+      <main class="home-hero">
+        <div class="hero-copy">
+          <p class="eyebrow">HELLO, I'M</p>
+          <h1>ELIZABETH<br>RIZOV</h1>
+          <p class="hero-subtitle">STUDENT DEVELOPER &amp; DESIGNER</p>
+          <p class="hero-text">I build futuristic digital experiences with code and creativity. Passionate about solving problems and bringing ideas to life.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="projects.html">View My Work</a>
+            <a class="btn ghost" href="contact.html">Get In Touch</a>
+          </div>
+        </div>
 
-              <div class="hero-actions">
-                <a class="btn btn-primary" href="projects.html">VIEW MY WORK</a>
-                <a class="btn btn-ghost" href="contact.html">GET IN TOUCH</a>
-              </div>
+        <aside class="current-status">
+          <p>Current Status</p>
+          <h2>Student<br>Developer</h2>
+          <span>Focus</span>
+          <ul>
+            <li>Frontend Development</li>
+            <li>Python Programming</li>
+            <li>UI/UX Design</li>
+            <li>Problem Solving</li>
+          </ul>
+        </aside>
 
-              <div class="hero-stats">
-                <div class="stat"><strong>3+</strong><span>YEARS CODING</span></div>
-                <div class="stat"><strong>10+</strong><span>PROJECTS COMPLETED</span></div>
-                <div class="stat"><strong>5+</strong><span>TECHNOLOGIES</span></div>
-                <div class="stat"><strong>100%</strong><span>DEDICATION</span></div>
-              </div>
-            </div>
-
-            <aside class="hero-side">
-              <div class="portrait-box"></div>
-              <div class="quick-info">
-                <h4>STUDENT DEVELOPER</h4>
-                <ul>
-                  <li>Frontend Development</li>
-                  <li>Python Programming</li>
-                  <li>UI/UX Design</li>
-                </ul>
-              </div>
-            </aside>
+        <section class="hero-stats" aria-label="Portfolio stats">
+          <div>
+            <strong>3+</strong>
+            <span>Years Coding</span>
+          </div>
+          <div>
+            <strong>10+</strong>
+            <span>Projects Completed</span>
+          </div>
+          <div>
+            <strong>5+</strong>
+            <span>Technologies</span>
+          </div>
+          <div>
+            <strong>100%</strong>
+            <span>Dedication</span>
           </div>
         </section>
-
       </main>
-
-      <footer class="panel-footer">
-        <div>Designed &amp; Built by Elizabeth Rizov</div>
-      </footer>
     </div>
   </div>
 
   <script src="script.js"></script>
 </body>
 </html>
-
-				<div class="load-more-wrap">
-					<button class="btn btn-outline">Load More</button>
-				</div>
-			</div>
-		</section>
-
-		<section id="about" class="about">
-			<div class="container about-inner">
-				<div class="about-left">
-					<h2>About Me</h2>
-					<p>I'm Elizabeth — a website designer and frontend developer focused on creating bold, immersive interfaces and performant, maintainable code.</p>
-					<ul class="stats">
-						<li><strong>3+</strong> Years Experience</li>
-						<li><strong>20+</strong> Projects Completed</li>
-						<li><strong>10+</strong> Happy Clients</li>
-					</ul>
-					<a class="btn btn-primary" href="#contact">Download Resume</a>
-				</div>
-				<div class="about-right">
-					<div class="about-card"></div>
-				</div>
-			</div>
-		</section>
-
-		<section id="contact" class="contact">
-			<div class="container">
-				<div class="contact-inner">
-					<div class="contact-form">
-						<h2>Let's Work Together</h2>
-						<form id="contact-form">
-							<label><span>Your Name</span><input name="name" required></label>
-							<label><span>Your Email</span><input name="email" type="email" required></label>
-							<label><span>Message</span><textarea name="message" rows="5" required></textarea></label>
-							<button class="btn btn-primary" type="submit">Send Message</button>
-						</form>
-					</div>
-					<aside class="contact-info">
-						<h3>Contact</h3>
-						<p>Email: <a href="mailto:hello@elizabeth.dev">hello@elizabeth.dev</a></p>
-						<p>Location: New York, USA</p>
-						<p class="socials">Socials: <a href="#">Dribbble</a> • <a href="#">GitHub</a> • <a href="#">LinkedIn</a></p>
-					</aside>
-				</div>
-			</div>
-		</section>
-	</main>
-
-	<footer class="site-footer">
-		<div class="container footer-inner">
-			<div>© <span id="year"></span> NEXORA — Designed by Elizabeth R.</div>
-			<nav class="footer-nav">
-				<a href="#projects">Projects</a>
-				<a href="#about">About</a>
-				<a href="#contact">Contact</a>
-			</nav>
-		</div>
-	</footer>
-
-	<script src="script.js"></script>
-</body>
-</html>
-

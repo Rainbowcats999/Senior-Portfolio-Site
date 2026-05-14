@@ -2,119 +2,107 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Projects — Elizabeth Rizov</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects by Elizabeth Rizov</title>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="app-shell">
-    <aside class="sidebar">
-      <div class="logo">ER</div>
-      <nav class="side-links" aria-label="Sidebar">
-        <a class="side-btn" href="index.html" title="Home">🏠</a>
-        <a class="side-btn" href="about.html" title="About">👤</a>
-        <a class="side-btn active" href="projects.html" title="Projects">💼</a>
-        <a class="side-btn" href="resume.html" title="Resume">📄</a>
-        <a class="side-btn" href="contact.html" title="Contact">✉️</a>
-      </nav>
-      <div class="side-footer">
-        <button class="icon-btn" title="Theme">⚙️</button>
-      </div>
-    </aside>
-
-    <div class="main-panel">
-      <header class="panel-header">
-        <div class="panel-left"><div class="name">ELIZABETH RIZOV</div></div>
-        <nav class="top-nav">
-          <a href="index.html" class="nav-link">Home</a>
-          <a href="about.html" class="nav-link">About</a>
-          <a href="projects.html" class="nav-link active">Projects</a>
-          <a href="resume.html" class="nav-link">Resume</a>
-          <a href="contact.html" class="nav-link">Contact</a>
+  <div class="site-shell">
+    <div class="page-panel project-panel">
+      <header class="topbar">
+        <a class="brand" href="index.html">ELIZABETH RIZOV</a>
+        <nav class="top-nav" aria-label="Primary">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a class="active" href="projects.html">Projects</a>
+          <a href="resume.html">Resume</a>
+          <a href="contact.html">Contact</a>
         </nav>
-        <div class="panel-right"><button class="icon-btn">⚙️</button></div>
+        <div class="mode-tools" aria-label="Display controls">
+          <button type="button" title="Light mode">&#9788;</button>
+        </div>
       </header>
 
-      <main class="panel-content">
-        <section class="projects-page">
-          <div class="section-head">
-            <h1>My Projects</h1>
-            <div class="filters">
-              <button class="filter active" data-filter="all">All</button>
-              <button class="filter" data-filter="web">Web Apps</button>
-              <button class="filter" data-filter="ui">UI/UX</button>
-              <button class="filter" data-filter="mobile">Mobile</button>
+      <main class="content projects-layout">
+        <aside class="project-intro">
+          <h1>My Projects</h1>
+          <p>A collection of my best work showcasing my skills in development and design.</p>
+          <a class="btn primary compact" href="#project-grid">View All Projects</a>
+
+          <section class="tech-stack" aria-label="Tech stack">
+            <h2>Tech Stack</h2>
+            <div class="tech-icons">
+              <span class="html">5</span>
+              <span class="css">3</span>
+              <span class="js">JS</span>
+              <span class="py">Py</span>
+              <span>R</span>
+              <span>G</span>
+              <span>F</span>
+              <span>V</span>
+              <span>C</span>
+              <span>A</span>
             </div>
-          </div>
+          </section>
+        </aside>
 
-          <div class="content-split">
-            <div>
-              <div class="projects-grid">
-            <article class="proj-card" data-type="web">
-              <div class="proj-thumb thumb-1"></div>
-              <div class="proj-body">
-                <h3>AI Study Helper</h3>
-                <p>A python project that helps students learn.</p>
-                <div class="proj-tags"><span>Python</span><span>AI</span></div>
-                <a class="btn btn-sm" href="#">VIEW PROJECT</a>
+        <section class="project-grid" id="project-grid">
+          <article class="project-card" data-type="web">
+            <img src="imgs/thumb1.svg" alt="AI study helper preview">
+            <div class="project-card-body">
+              <div class="card-title-row">
+                <h2>AI Study Helper</h2>
+                <a href="#" aria-label="Open AI Study Helper">&#8599;</a>
               </div>
-            </article>
-
-            <article class="proj-card" data-type="web">
-              <div class="proj-thumb thumb-2"></div>
-              <div class="proj-body">
-                <h3>Weather Dashboard</h3>
-                <p>Responsive dashboard with realtime data.</p>
-                <div class="proj-tags"><span>Web</span><span>API</span></div>
-                <a class="btn btn-sm" href="#">VIEW PROJECT</a>
-              </div>
-            </article>
-
-            <article class="proj-card" data-type="ui">
-              <div class="proj-thumb thumb-3"></div>
-              <div class="proj-body">
-                <h3>Portfolio Website</h3>
-                <p>Personal site built with modern CSS & JS.</p>
-                <div class="proj-tags"><span>HTML</span><span>CSS</span></div>
-                <a class="btn btn-sm" href="#">VIEW PROJECT</a>
-              </div>
-            </article>
-
-            <article class="proj-card" data-type="ui">
-              <div class="proj-thumb thumb-4"></div>
-              <div class="proj-body">
-                <h3>Task Manager</h3>
-                <p>Task app to keep organised and productive.</p>
-                <div class="proj-tags"><span>JS</span><span>UX</span></div>
-                <a class="btn btn-sm" href="#">VIEW PROJECT</a>
-              </div>
-            </article>
-              </div>
+              <div class="tag-row"><span>Python</span></div>
+              <p>A Python application that helps students organize notes, generate summaries, and quiz themselves using AI.</p>
+              <a class="btn ghost tiny" href="#">View Project</a>
             </div>
+          </article>
 
-            <aside class="right-panel">
-              <div class="glass-panel">
-                <h4>Quick Info</h4>
-                <p>Focused on frontend development, UI/UX and creative tools.</p>
-                <h4>Skills</h4>
-                <div class="skill-bar"><i style="width:95%"></i></div>
-                <div class="skill-bar"><i style="width:88%"></i></div>
-                <div class="skill-bar"><i style="width:80%"></i></div>
-                <h4>Achievements</h4>
-                <ul>
-                  <li>Top Performer in CS Class</li>
-                  <li>Hackathon Finalist</li>
-                </ul>
+          <article class="project-card" data-type="web">
+            <img src="imgs/thumb2.svg" alt="Weather dashboard preview">
+            <div class="project-card-body">
+              <div class="card-title-row">
+                <h2>Weather Dashboard</h2>
+                <a href="#" aria-label="Open Weather Dashboard">&#8599;</a>
               </div>
-            </aside>
-          </div>
+              <div class="tag-row"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+              <p>A responsive weather app that shows real-time data using API integration with a futuristic UI.</p>
+              <a class="btn ghost tiny" href="#">View Project</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-type="ui">
+            <img src="imgs/thumb3.svg" alt="Portfolio website preview">
+            <div class="project-card-body">
+              <div class="card-title-row">
+                <h2>Portfolio Website</h2>
+                <a href="#" aria-label="Open Portfolio Website">&#8599;</a>
+              </div>
+              <div class="tag-row"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+              <p>A personal portfolio website designed with a cyberpunk aesthetic and smooth animations.</p>
+              <a class="btn ghost tiny" href="#">View Project</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-type="web">
+            <img src="imgs/thumb4.svg" alt="Task manager preview">
+            <div class="project-card-body">
+              <div class="card-title-row">
+                <h2>Task Manager</h2>
+                <a href="#" aria-label="Open Task Manager">&#8599;</a>
+              </div>
+              <div class="tag-row"><span>Python</span></div>
+              <p>A task management system built with Python and SQLite to help users stay organized and productive.</p>
+              <a class="btn ghost tiny" href="#">View Project</a>
+            </div>
+          </article>
         </section>
       </main>
-
-      <footer class="panel-footer">Designed &amp; Built by Elizabeth Rizov</footer>
     </div>
   </div>
 
