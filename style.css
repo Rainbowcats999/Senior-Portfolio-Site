@@ -758,7 +758,7 @@ img {
 
 .project-card img {
   width: 100%;
-  height: 150px;
+  height: 300px;
   object-fit: cover;
   border-bottom: 1px solid rgba(63, 105, 255, .32);
 }
@@ -1092,6 +1092,10 @@ img {
     grid-template-columns: 1fr;
   }
 
+  .project-card img {
+    height: 260px;
+  }
+
   .current-status {
     position: relative;
     top: auto;
@@ -1153,5 +1157,9 @@ img {
 
   .contact-list div {
     grid-template-columns: 32px 1fr;
+  }
+
+  .project-card img {
+    height: 180px;
   }
 }
