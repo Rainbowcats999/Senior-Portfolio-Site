@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <a id="top"></a>
   <div class="site-shell">
     <div class="page-panel project-panel">
       <header class="topbar">
@@ -49,7 +50,20 @@
           </section>
         </aside>
 
-        <section class="project-grid" id="project-grid">
+        <div class="filters-wrap">
+          <div class="filters" aria-label="Filter projects">
+            <button class="filter btn ghost active" data-filter="all">All</button>
+            <button class="filter btn ghost" data-filter="sophmore">Sophmore</button>
+            <button class="filter btn ghost" data-filter="junior">Junior</button>
+            <button class="filter btn ghost" data-filter="senior">Senior</button>
+          </div>
+        </div>
+
+        <section id="project-grid">
+
+          <section class="project-grid year-section" id="sophmore-projects">
+            <h2>Sophmore Year Projects</h2>
+          
           <article class="project-card" data-type="web">
             <img src="imgs/hello.webp" alt="AI study helper preview">
             <div class="project-card-body">
@@ -172,9 +186,11 @@
                 <h2>NJ LightHouses Project: Sophmore Year</h2>
                 <a href="#" aria-label="Open Task Manager">&#8599;</a>
               </div>
-              <div class="tag-row"><span>Python</span></div>
-              <p>A task management system built with Python and SQLite to help users stay organized and productive.</p>
-              <a class="btn ghost tiny" href="#">View Project</a>
+              <div class="tag-row"><span>HTML</span><span>CSS</span></div>
+              <p>A simple project using HTML and CSS to create a website for displaying some of 
+                the top historical lighthouses in New Jersey. I practiced using the position property in CSS to position the text and images in the correct place. I received a 20/20 on this project. This project was part of the blue 5 team, which was deleted so it's inaccessible.
+              </p>
+              <a class="btn ghost tiny" href="https://replit.com/@honors-web-design-blue5-2026/NJLighthouses-ElizabethRizov">View Project</a>
             </div>
           </article>
 
@@ -185,9 +201,10 @@
                 <h2>Falling Leaves Project: Sophmore Year</h2>
                 <a href="#" aria-label="Open Task Manager">&#8599;</a>
               </div>
-              <div class="tag-row"><span>Python</span></div>
-              <p>A task management system built with Python and SQLite to help users stay organized and productive.</p>
-              <a class="btn ghost tiny" href="#">View Project</a>
+              <div class="tag-row"><span>HTML</span><span>CSS</span></div>
+              <p>A simple project using HTML and CSS following a video toutrial on how to create falling leaves on a page, one of my personal favorites. This project was part of the blue 5 team, which was deleted so it's inaccessible.
+              </p>
+              <a class="btn ghost tiny" href="https://replit.com/@honors-web-design-blue5-2026/Falling-Leaves-Project">View Project</a>
             </div>
           </article>
 
@@ -199,8 +216,8 @@
                 <a href="#" aria-label="Open Task Manager">&#8599;</a>
               </div>
               <div class="tag-row"><span>HTML</span><span>CSS</span></div>
-              <p>The Sophmore year portfolio project. A compliation of all projects I made within a couple months in Sophmore year.</p>
-              <a class="btn ghost tiny" href="#">View Project</a>
+              <p>The Sophmore year portfolio project. A compliation of all projects I made within a couple months in Sophmore year. Also inaccessible, I'm sorry about that.</p>
+              <a class="btn ghost tiny" href="https://replit.com/@honors-web-design-blue5-2026/Elizabeths-Portfolio-Project">View Project</a>
             </div>
           </article>
 
@@ -212,8 +229,9 @@
                 <a href="#" aria-label="Open Task Manager">&#8599;</a>
               </div>
               <div class="tag-row"><span>HTML</span><span>CSS</span></div>
-              <p>A task management system built with Python and SQLite to help users stay organized and productive.</p>
-              <a class="btn ghost tiny" href="#">View Project</a>
+              <p>A quick little chemistry class on a website. Introducing
+                the first ten elements of the periodic table. Sadly you won't get that lesson because the project is inaccessible.</p>
+              <a class="btn ghost tiny" href="https://replit.com/@honors-web-design-blue5-2026/First10Elements-ElizabethRizov#index.html">View Project</a>
             </div>
           </article>
 
@@ -225,8 +243,10 @@
                 <a href="#" aria-label="Open Task Manager">&#8599;</a>
               </div>
               <div class="tag-row"><span>HTML</span><span>CSS</span></div>
-              <p>A task management system built with Python and SQLite to help users stay organized and productive.</p>
-              <a class="btn ghost tiny" href="#">View Project</a>
+              <p>A simple project using HTML and CSS to create a website for displaying information about puppies. And also
+                a small litttle store selling dog products. This project was actually made on sandbox which didn't delete my work so this is one of the few Sophmore year projects that
+              is accessible.</p>
+              <a class="btn ghost tiny" href="https://codesandbox.io/p/sandbox/who-let-the-dogs-out-j5fy4y?file=%2Findex.html%3A13%2C8">View Project</a>
             </div>
           </article>
 
@@ -238,8 +258,10 @@
                 <a href="#" aria-label="Open Task Manager">&#8599;</a>
               </div>
               <div class="tag-row"><span>HTML</span><span>CSS</span></div>
-              <p>A task management system built with Python and SQLite to help users stay organized and productive.</p>
-              <a class="btn ghost tiny" href="#">View Project</a>
+              <p>Just a project using a lot of bootstrap and animations. I had a lot of fun making the pictures of the fruits spin. I animated them to spin like 10,000 degrees. This project
+                was made on replit but outside of the blue 5 team so it is still accessible, unlike most of my other Sophmore year projects.
+              </p>
+              <a class="btn ghost tiny" href="https://replit.com/@ElizabethRizov/Fruit-Market#index.html">View Project</a>
             </div>
           </article>
 
@@ -251,8 +273,10 @@
                 <a href="#" aria-label="Open Task Manager">&#8599;</a>
               </div>
               <div class="tag-row"><span>HTML</span><span>CSS</span></div>
-              <p>A task management system built with Python and SQLite to help users stay organized and productive.</p>
-              <a class="btn ghost tiny" href="#">View Project</a>
+              <p>This was practice on how to create bootstrap navbars, and bootstrap cards. I chose a minecraft theme, talking about minecraft and the former CEO of the company Mojang.
+                This is also one of my better projects. It's accesible since it's outside of the blue 5 team.
+              </p>
+              <a class="btn ghost tiny" href="https://replit.com/@ElizabethRizov/Nav-Bar-Practice-project#style.css">View Project</a>
             </div>
           </article>
 
@@ -264,7 +288,10 @@
                 <a href="#" aria-label="Open Task Manager">&#8599;</a>
               </div>
               <div class="tag-row"><span>HTML</span><span>CSS</span></div>
-              <p>A task management system built with Python and SQLite to help users stay organized and productive.</p>
+              <p>This was probably my favorite project in Sophmore year. I had a video as the background on the homepage, I overcomplicated the hotels page including like 72 different hotels when I only needed 4. On the other pages
+              I only added aroun 3-4 cards. But thankfully this project
+              was a personal one on replit so it's accesible, I'm glad I still have it.
+              </p>
               <a class="btn ghost tiny" href="https://replit.com/@ElizabethRizov/SingaporeVacationWebsite#Singaporehotels.html">View Project</a>
             </div>
           </article>
@@ -277,8 +304,8 @@
                 <a href="#" aria-label="Open Task Manager">&#8599;</a>
               </div>
               <div class="tag-row"><span>HTML</span><span>CSS</span></div>
-              <p>A task management system built with Python and SQLite to help users stay organized and productive.</p>
-              <a class="btn ghost tiny" href="#">View Project</a>
+              <p>This was a project where I created a website for displaying album covers. I chose random songs created by Billie Eilish. It was made on replit and is still accessible, unlike most of my other Sophmore year projects.</p>
+              <a class="btn ghost tiny" href="https://replit.com/@ElizabethRizov/Billie-Eilish#index.html">View Project</a>
             </div>
           </article>
 
@@ -290,8 +317,8 @@
                 <a href="#" aria-label="Open Task Manager">&#8599;</a>
               </div>
               <div class="tag-row"><span>HTML</span><span>CSS</span></div>
-              <p>A task management system built with Python and SQLite to help users stay organized and productive.</p>
-              <a class="btn ghost tiny" href="#">View Project</a>
+              <p>This was a partner project where I created a website for a fictional coffee shop. My partner and I decided to go with a cat theme. Doesn't look the prettiest but it's still very cute. It was made on replit and is still accessible, unlike most of my other Sophmore year projects.</p>
+              <a class="btn ghost tiny" href="https://replit.com/@ElizabethRizov/Cat-Coffee-Shop-1#style.css">View Project</a>
             </div>
           </article>
 
@@ -303,10 +330,15 @@
                 <a href="#" aria-label="Open Task Manager">&#8599;</a>
               </div>
               <div class="tag-row"><span>HTML</span><span>CSS</span></div>
-              <p>A task management system built with Python and SQLite to help users stay organized and productive.</p>
-              <a class="btn ghost tiny" href="#">View Project</a>
+              <p>A project focused on raising awareness about global cancer disparities and the initiatives working to address them. Final project of Sophmore year and it's accesible since it was made outside of the blue 5 team.</p>
+              <a class="btn ghost tiny" href="https://replit.com/@ElizabethRizov/Global-Cancer-Disparities-Initiative-Web-site">View Project</a>
             </div>
           </article>
+
+          </section>
+
+          <section class="project-grid year-section" id="junior-projects">
+            <h2>Junior Year Projects</h2>
 
           <article class="project-card" data-type="web">
             <img src="imgs/summer.webp" alt="Task manager preview">
@@ -464,6 +496,11 @@
             </div>
           </article>
 
+          </section>
+
+          <section class="project-grid year-section" id="senior-projects">
+            <h2>Senior Year Projects</h2>
+
           <article class="project-card" data-type="web">
             <img src="imgs/college.jpg" alt="Task manager preview">
             <div class="project-card-body">
@@ -567,12 +604,16 @@
               <a class="btn ghost tiny" href="#">View Project</a>
             </div>
           </article>
+
+          </section>
+
         </section>
       </main>
     </div>
   </div>
 
 
+  <a href="#top" class="back-to-top hidden" aria-label="Back to top">↑</a>
   <script src="script.js"></script>
 </body>
 </html>
